@@ -1,5 +1,5 @@
 {% set name = "alignn" %}
-{% set version = "2024.4.10" %}
+{% set version = "2024.4.20" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/usnistgov/alignn/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 73afb6a8b8bbcac96a859de433cdd0aa0ab99ce9e00774aad5058310b12f1967
+  sha256: 16f9478d1bd358e1627b02381f4171eb79319ea7fcef0bd825648b0f94fa2f74
 
 build:
   noarch: python 
@@ -40,12 +40,14 @@ requirements:
     - pydocstyle >=6.0.0
     - pyparsing >=2.2.1,<3
     - ase
+    - python-lmdb
 
 test:
   imports:
     - alignn
   commands:
     - pip check
+    - train_alignn.py -h
   requires:
     - pip
 about:
