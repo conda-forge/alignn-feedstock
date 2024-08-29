@@ -1,5 +1,5 @@
 {% set name = "alignn" %}
-{% set version = "2024.5.27" %}
+{% set version = "2024.8.27" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/usnistgov/alignn/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 28797136829f13683b40136d1aa5ee191e23772423e31596283a2a2cb02b4877
+  sha256: 6694bde4646c5866bc05993b9b6160f51706a2628197175fc679f8aec8a24a79
 
 build:
   noarch: python 
@@ -52,7 +52,7 @@ test:
     - pip
 about:
   home: https://github.com/usnistgov/alignn
-  summary: Atomistic Line Graph Neural Network
+  summary: Atomistic Line Graph Neural Network & force-field
   license: NIST-PD
   license_file: LICENSE
 
