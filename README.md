@@ -7,7 +7,7 @@ Home: https://github.com/usnistgov/alignn
 
 Package license: NIST-PD
 
-Summary: Atomistic Line Graph Neural Network
+Summary: Atomistic Line Graph Neural Network & force-field
 
 Current build status
 ====================
