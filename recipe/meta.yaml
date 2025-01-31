@@ -1,5 +1,5 @@
 {% set name = "alignn" %}
-{% set version = "2024.12.02" %}
+{% set version = "2024.12.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/usnistgov/alignn/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: da1c6ca6da3a22d997a1ee064a6b85628e89e4d7729154db6c3b12ce51175c1f
+  sha256: 628539bd04ea91c64114432817f48f152bfba22314400d9128afda743b1203a8
 
 build:
   noarch: python 
