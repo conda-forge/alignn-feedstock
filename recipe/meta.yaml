@@ -1,5 +1,5 @@
 {% set name = "alignn" %}
-{% set version = "2024.12.12" %}
+{% set version = "2025.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,17 +7,17 @@ package:
 
 source:
   url: https://github.com/usnistgov/alignn/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 628539bd04ea91c64114432817f48f152bfba22314400d9128afda743b1203a8
+  sha256: 8211dc119febcd2944a6cc1e2caaa1a2f78f1ecf3a62407a786c338c9a7b10b8
 
 build:
-  noarch: python 
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python >=3.8
-    - setuptools 
+    - setuptools
     - wheel
     - pip
   run:
