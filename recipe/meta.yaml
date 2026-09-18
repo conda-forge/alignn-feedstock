@@ -1,5 +1,6 @@
 {% set name = "alignn" %}
 {% set version = "2026.8.11" %}
+{% set python_min = python_min | default("3.10") %}
 
 package:
   name: {{ name|lower }}
