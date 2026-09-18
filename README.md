@@ -3,7 +3,7 @@ About alignn-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/alignn-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/usnistgov/alignn
+Home: https://github.com/atomgptlab/alignn
 
 Package license: NIST-PD
 
